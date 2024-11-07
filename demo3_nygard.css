@@ -1,0 +1,25 @@
+h1{
+	background-color: black;
+	color: white;
+	padding: 3%;
+}
+body{
+	margin: 3%;
+	font-family: outfit;
+	text-align: justify;
+
+}
+.banner{
+	float: right;
+	padding: 2%;
+	height: 100px;
+
+
+}
+.image{
+
+	}
+ul{
+	list-style: none;
+	padding: 0;
+}

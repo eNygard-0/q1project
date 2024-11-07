@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Best Animated Movie</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	<style>
+		body{
+			margin-left: 21%;
+			margin-right: 21%;
+			margin-bottom: 8%;
+			margin-top: 2%;
+			background-image: url(image.jpg);
+			repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			font-family: outfit;
+		}
+		.image{
+			display: ;
+			height: 200px;
+			width: auto;
+			border-radius: 2%;
+		}
+		div{
+			background-color: rgba(255, 255, 255, .6);
+			padding: 6%;
+			padding-top: 3%;
+			padding-top: 1%;
+			text-align: center;
+		}
+		div2{
+			text-align: left;
+		}
+		.list{
+			display: inline-block;
+			padding: 5px;
+			list-style-type: none;
+		}
+		a{
+			color: black;
+		}
+		ol{
+			line-height: 22px;
+		}
+		h1{
+			background-color: rgb(251,219,101);
+			padding: 2%;
+		}
+		#2{
+			text-align: left;
+		}
+		input[type="submit"],
+		input[type="reset"] {
+		    padding: 7px;
+		    margin: 10px 5px;
+		    border-radius: 3px;
+		    background-color: white;
+		    border: none;
+		    color: black;
+		    cursor: pointer;
+		    font-family: outfit;
+		}
+
+		input[type="reset"]:hover,
+		input[type="submit"]:hover {
+		    background-color: grey;
+		  }
+		  .formthing{
+		  	background-color: rgb(251,219,101, 0.8);
+		  	text-align: left;
+		  	padding: 12px;
+		  	border-radius: 4px;
+		  	padding-left: 30px;
+		  	padding-right: 30px;
+		  }
+		  input[type="text"],
+		  textarea,
+		  select{
+		  	font-family: outfit;
+		  	padding: 5px;
+		  	border-radius: 4px;
+		  	border: none;
+
+		  }
+	</style>
+
+</head>
+<body><div>
+	<h1>Ratatouille</h1>
+	<img src="image1.jpeg" height="300px">
+	<p><a href="https://www.imdb.com/title/tt0382932/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_rata">Ratatouille</a> is a Pixar film released in 2007. The story is about a rat who dreams of being a chef. Separated from his family, the rat, Remy, ends up in Paris, befriending an incompetent young man. The man, Linguini, has no ability to cook, so Remy controls him by pulling his hair. Their strategy encounters many problems, as the culinary industry despises rats and the boss of their restaurant wants full control.</p><br>
+	<h4><b>Main Characters</b></h4>
+	<ul>
+		<li class="list">
+			<img class="image" src="quiz2.jpg">
+			<p>Linguini</p>
+		</li>
+		<li class="list">
+			<img class="image" src="quiz3.png">
+			<p>Remy</p>
+		</li>
+		<li class="list">
+			<img class="image" src="Anton_Ego.webp">
+			<p>Anton Ego</p>
+		</li>
+	</ul><br>
+	
+<div2>
+	<h4><b>Runner Ups</b></h4>
+	<img src="no.jpg" style="float:right; border-radius:2%; height: 150px;">
+	<ol>
+		<li><a href="https://www.imdb.com/title/tt2948372/?ref_=fn_al_tt_1" target= _blank>Soul (2020, starring Jamie Foxx)</a></li>
+		<li><a href="https://www.imdb.com/title/tt2380307/?ref_=nv_sr_srsg_0_tt_2_nm_6_in_0_q_coco" target= _blank>Coco (2017, starring Anthony Gonzales)</a></li>
+		<li><a href="https://www.imdb.com/title/tt1192628/?ref_=fn_al_tt_1" target= _blank>Rango (2011, starring Johnny Depp)</a></li>
+		<li><a href="https://www.imdb.com/title/tt12801262/?ref_=fn_al_tt_1" target= _blank>Luca (2021, starring Jacob Tremblay)</a></li>
+		<li><a href="https://www.imdb.com/title/tt0472033/?ref_=nv_sr_srsg_6_tt_8_nm_0_in_0_q_9" target= _blank>9 (2009, starring Elijah Wood)</a></li>
+		<li><a href="https://www.imdb.com/title/tt2861424/?ref_=nv_sr_srsg_0_tt_2_nm_6_in_0_q_rick" target="_blank">The best (and rickest)</a></li>
+	</ol><br><br><br><br>
+	<div class="formthing">
+	<h4 id="survey" style="text-align: center;">Survey</h4>
+		<form>
+		<label for="para">What did you think about this movie?</label><br>
+		<textarea name="para" rows="4" cols="50" placeholder="Give a short review or share your insights..."></textarea><br><br>
+
+		<label for="select">Which recommendation stood out to you?</label><br>
+		<select required>
+			<option value="select">Select</option>
+			<option value="soul">Soul</option>
+			<option value="coco">Coco</option>
+			<option value="rango">Rango</option>
+			<option value="luca">Luca</option>
+			<option value="9">9</option>
+			<option value="the best">The best</option>
+		</select>
+		<br><br>
+		 
+		<label for="recommendations">What movies would you recommend?</label><br>
+		<input style="width: 47%;" type="text" name="recommendations" placeholder="Type your recommendation here..." required maxlength=""><br><br>
+		
+		<input type="submit" value="SUBMIT">
+		<input type="reset" value="RESET">
+		</form></div>
+</div2><br>
+<p style="text-align: center;">Submitted by: Evan Nygard</p>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Form</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+	<style>
+		body{
+			background-color: rgba(255, 255, 255, 1.0);
+			font-family: outfit;
+			margin: 8%;
+			margin-top: 3%;
+		}
+
+		form{
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="search"],
+		input[type="date"],
+		textarea,
+		select{
+			width: 100%;
+			padding: 1%;
+
+		}
+
+		input[type="submit"]{
+			padding: 10px;
+			margin: 10px 5px;
+			border-radius: 3px;
+			background-color: green;
+			border: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		input[type="reset"]{
+			padding: 10px;
+			margin: 10px 5px;
+			border-radius: 3px;
+			background-color: red;
+			border: none;
+			color: white;
+			cursor: pointer;
+			pointer-events: initial;
+		}
+
+		input[type="reset"]:hover,
+		input[type="submit"]:hover{
+			background-color: grey;
+		}
+
+		input[type="reset"],
+		input[type="submit"]{
+			background-color: grey;
+
+		}
+
+		label{
+			display: inline-block;
+			margin: 10px 0.5px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Student Data Collector</h1>
+	<form>
+		<label for="search">Search Bar:</label>
+		<input type="search" id="search" name="search">
+
+		<label for="text">Enter Full Name:</label>
+		<input type="text" id="text" name="text">
+
+		<label for="email">Enter Email:</label>
+		<input type="email" id="email" name="email">
+
+		<label for="security">Enter Password:</label>
+		<input type="password" id="security" name="security">
+
+		<label for="birthday">Enter Birthday:</label>
+		<input type="date" id="birthday" name="birthday">
+
+		<label for="radio">What pet do you have?:</label>
+		<input type="radio" id="radio1" name="radio" value="Dogs"> Dogs
+		<input type="radio" id="radio2" name="radio" value="Cats"> Cats
+		<input type="radio" id="radio3" name="radio" value="Fish"> Fish
+
+		<label for="idpicture">Insert ID Picture:</label>
+		<input type="file" id="idpicture" name="idpicture">
+
+		<label for="select">What is your favorite color?</label>
+		<select>
+			<option value="Red">Red</option>
+			<option value="Yellow">Yellow</option>
+			<option value="Green">Green</option>
+			<option value="Blue">Blue</option>
+			<option value="None of the above">None of the above</option>
+		</select>
+
+		<label for="">Text Area:</label>
+		<textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Type here..."> </textarea>
+
+		<input type="submit" value="SUBMIT">
+		<input type="reset" value="RESET">
+
+
+	</form>
+
+</body>
+</html>

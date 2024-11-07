@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Div Page Sample</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+	<style>
+		html, body{
+			margin: 	0;
+			padding: 	0;
+			broder: none;
+			height: 100%;
+			font-family: outfit;
+		}
+		.container{
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+		.header{
+			background-color: black;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			font-size: 	24px;
+			flex-shrink: 0;
+		}
+		.main{
+			display: flex;
+			flex-grow: 1;
+		}
+		.sidebar{
+			width: 25%;
+			background-color: gray;
+			padding: 20px;
+			box-sizing: border-box	;
+		}
+		.maincontent{
+			flex-grow: 1;
+			background background-color: white;
+			padding: 20px;
+			box-sizing: border-box;
+			overflow-y: auto;
+		}
+		.formsection{
+			margin-top: 20px;
+			padding:15px;
+			background-color: lightgray;
+			border: 1px solid gray;
+			border-radius: 3px;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h3>OBMC- Grade 09 Emerald</h3>
+		</div>
+		<div class="main">
+			<div class="sidebar">
+				<h3>Sidebar Example</h3>
+				<p>This is an example sidebar. This is an example sidebar. This is an example sidebar. This is an example sidebar. This is an example sidebar.</p>
+			</div>
+			<div class="maincontent">
+				<h3>Main Content</h3>
+				<p>The main content is placed here using the div element. The main content is placed here using the div element. The main content is placed here using the div element. The main content is placed here using the div element. The main content is placed here using the div element. The main content is placed here using the div element.</p>
+				<div class="formsection">
+					<form>
+						<label for="name">Enter name:</label><br>
+						<input type="text" name="name" placeholder="Type here..."><br><br>
+
+						<label for="email">Enter email:</label><br>
+						<input type="email" name="mail" placeholder="Type here..."><br><br>
+
+						<label for="address">Address</label><br>
+						<textarea name="address" rows="4" cols="50" placeholder="Type here..."></textarea><br><br>
+
+						<input type="submit" value="SUBMIT">
+						<input type="reset" value="RESET">
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

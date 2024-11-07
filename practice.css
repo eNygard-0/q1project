@@ -1,0 +1,24 @@
+body{
+	font-family: outfit;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	margin-bottom: 7%;
+	background-image: url(hi.avif);
+	background-attachment: fixed;
+	background-position: center;
+	baxkground-size: cover;
+	background-repeat: no-repeat;
+}
+div{
+	background: rgba(255, 255, 255, 0.62);
+	padding: 3.5%;
+	margin-left: 3%;
+	margin margin-right: 3%;
+	margin-top: 1%;
+	margin-bottom: 6%;
+}
+img{
+	float: right;
+	padding: 3%;
+}

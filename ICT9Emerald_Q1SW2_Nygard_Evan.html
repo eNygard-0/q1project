@@ -1,0 +1,195 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Information form</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+	<style>
+	body {
+		    font-family: outfit;
+		    text-align: center; /* Center text content across the page */
+		}
+
+		form {
+		    max-width: 600px;
+		    margin: 0 auto; /* Centers the form horizontally */
+		    margin-top: 3%;
+		    background-color: white;
+		    color: black;
+		    padding: 20px; /* Add some padding for better spacing */
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="number"],
+		input[type="date"],
+		textarea,
+		select {
+		    width: 100%;
+		    padding: 1%;
+		}
+
+		.thing {
+		    display: flex;
+		    list-style-type: none;
+		}
+
+		div {
+		    display: flex;
+		}
+
+		input[type="submit"],
+		input[type="reset"] {
+		    padding: 10px;
+		    margin: 10px 5px;
+		    border-radius: 3px;
+		    background-color: green;
+		    border: none;
+		    color: white;
+		    cursor: pointer;
+		}
+
+		input[type="reset"]:hover,
+		input[type="submit"]:hover {
+		    background-color: grey;
+		}
+
+		.one {
+		    display: flex;
+		    justify-content: center; /* Centers both the h1 and the image horizontally */
+		    align-items: center; /* Vertically aligns the h1 and image */
+		    background-color: #024A85;
+		    color: white;
+		    padding: 10px;
+		    width: 100%;
+		}
+
+		.left {
+		    flex: 1; /* Ensures the heading takes the proper width */
+		    display: flex;
+		    justify-content: center; /* Centers the h1 within its container */
+		}
+
+		.right img {
+		    width: 75px;
+		    height: 75px;
+		    border-radius: 50%;
+		    margin-left: 10px; /* Adds space between the h1 and the image */
+		}
+	</style>
+
+</head>
+<body>
+	<span class="one">
+	<div class="left">
+	<h1>Student Information Form</h1>
+	</div>
+	<div class="right">
+	<img src="images.png" style="width: 75px; height: 75px;">
+	</div>
+	</span>
+	<br><br><br><br>
+	
+	<form>
+		<span id="1">
+		<label for="fullname">Enter Full Name:</label>
+		<input type="text" name="fullname" placeholder="type here" required><br><br>
+		</span>
+
+		<span id="2">
+		<label for="select">Select Campus:</label>
+		<select required>
+			<option value="select">Select</option>
+			<option value="Greenhills">Greenhills</option>
+			<option value="Fairview">Fairview</option>
+			<option value="Angeles">Angeles</option>
+			<option value="Las Pinas">Las Pinas</option>
+			<option value="Sta. Ana">Sta. Ana</option>
+		</select>
+		<br><br>
+		</span>
+
+		<span id="3">
+		<label for="select">Select Grade:</label>
+		<select required>
+			<option value="select">Select</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		<br><br>
+		</span>
+
+		<span id="4">
+		<label for="select">Select Section:</label>
+		<select required>
+			<option value="select">Select</option>
+			<option value="Amethyst">Amethyst</option>
+			<option value="Emerald">Emerald</option>
+			<option value="Ruby">Ruby</option>
+			<option value="Sapphire">Sapphire</option>
+			<option value="Topaz">Topaz</option>
+		</select>
+		<br><br>
+		</span>
+
+		<span id="5">
+		<label for="radio">Select Gender:</label>
+		<ul><div>
+			<li class="thing"><input type="radio" name="radio" value="Female">Female</li><br>
+			<li class="thing"><input type="radio" name="radio" value="Male">Male</li><br>
+			<li class="thing"r><input type="radio" name="radio" value="Other">Other</li></div>
+		</ul>
+		</span>
+
+		<span id="6">
+		<label for="age">Enter Age:</label>
+		<input type="number" name="age" placeholder="Type here..." required>
+		<br><br>
+		</span>
+
+		<span id="7">
+		<label for="birthday">Enter Birthday:</label>
+		<input type="date" name="birthday" placeholder="Type here..." required>
+		<br><br>
+		</span>
+
+		<span id="8">
+		<label for="email">Enter Email:</label>
+		<input type="email" name="email" placeholder="blank@obmontessori.edu.ph" required>
+		<br><br>
+		</span>
+
+		<span id="9">
+		<label for="studentnumber">Enter Student Number:</label>
+		<input type="password" name="studentnumber" placeholder="Type here..." required>
+		<br><br>
+		</span>
+
+		<label for="idpicture">Insert ID Picture:</label><br>
+		<input type="file" id="idpicture" name="idpicture" required>
+		<br><br>
+
+		<label for="checkbox">Do you consent to sharing this information?</label><br>
+		<input type="checkbox" id="checkbox" name="checkbox" value="yes" required>Yes
+		<br><br>
+
+		<input type="submit" value="SUBMIT">
+		<input type="reset" value="RESET" placeholder="Select image">
+
+
+
+	</form>
+
+	<p style="text-align: center; margin-bottom: 50px;"><i>Form by Evan Nygard</i></p>
+	
+
+</body>
+</html>
